@@ -14,7 +14,22 @@ class ItemsController < ApplicationController
         end
     end
 
+    def update
+        item = Item.find_by_id(params[:id])
+        if item.update(item_params)
+            render json: item
+        else
+            render json: {error: "Couldn't update your changes!"}
+        end
+    end
+
     
 
+
+    private
+
+    def item_params
+        params.require(:item).permit(:name, :description, :price, :image, :likes, :category)
+    end
 
 end
