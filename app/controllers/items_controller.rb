@@ -26,7 +26,7 @@ class ItemsController < ApplicationController
     def destroy
         item = Item.find_by_id(params[:id])
         item.destroy
-        render json: {message: "#{item.name} was deleted!"}
+        render json: item.id
     end
 
 
