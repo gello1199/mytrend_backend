@@ -10,7 +10,7 @@ class ItemsController < ApplicationController
         if item.save
             render json: item
         else
-            render json: {error: item.errors.full_messages}
+            render json: {error: item.errors.full_messages} 
         end
     end
 
@@ -26,14 +26,15 @@ class ItemsController < ApplicationController
     def destroy
         item = Item.find_by_id(params[:id])
         item.destroy
-        render json: item.id
+        render json: item.id 
     end
 
 
     private
 
     def item_params
-        params.require(:item).permit(:name, :description, :price, :image, :likes, :category)
+        params.require(:item).permit(:name, :description, :price, :image, :favorite, :category)
     end
 
 end
+
