@@ -16,6 +16,8 @@ $ gem install mytrend_backend
 
 To run the program:
 
+run rails db:create
+
 run rails db:migrate
 
 rails s
