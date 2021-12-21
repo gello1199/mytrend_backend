@@ -2,7 +2,7 @@
 
 Welcome to the MyTrends app! This app allows the user to add and view the newest fashion trends, while also curating their top looks in their favorite page. Each item will include a name, price, description, category and image. From the trends page, you can add a look to your favorites, remove from favorites, or delete completely. The app also has additional functionality that enlarges the image when a mouse hovers over the image.
 
-Installation
+# Installation
 
 ruby version 2.6.1
 
@@ -22,7 +22,7 @@ run rails db:migrate
 
 rails s
 
-Usage
+# Usage
 
 To start, run bundle install to make sure all of the necessary gems have been installed successfully.
 
