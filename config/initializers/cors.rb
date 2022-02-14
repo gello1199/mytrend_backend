@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://gello1199.github.io/mytrend-frontend/'
+    origins 'https://mytrend-app.netlify.app/'
 
     resource '*',
       headers: :any,
