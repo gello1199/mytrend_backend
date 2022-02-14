@@ -10,8 +10,8 @@ class ApplicationController < ActionController::API
     #   render json: { error: exception.message }, status: :not_found
     # end
 
-    def home
-        render json: {message: "Server is up!"}
-    end
+    # def home
+    #     render json: {message: "Server is up!"}
+    # end
 
 end
